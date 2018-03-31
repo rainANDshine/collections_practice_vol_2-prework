@@ -31,5 +31,5 @@ def count_elements(array)
   
   array.each do |element|
     if new_array.last != element
-      new_array << {element.key => element.value}
+      new_array << {element.keys => element.values}
   
