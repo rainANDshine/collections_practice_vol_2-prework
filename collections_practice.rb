@@ -17,9 +17,13 @@ def contain_a(array)
 end
 
 def first_wa(array)
+  temp = nil
+  
   array.collect do |element|
-    element if element.to_s.start_with?("wa") == true
+    temp = element if element.start_with?("wa") == true
   end
+  
+  temp
 end
   
   
