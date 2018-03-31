@@ -15,4 +15,6 @@ def contain_a(array)
   
   temp
 end
+
+def 
   
