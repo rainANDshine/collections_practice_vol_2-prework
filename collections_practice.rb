@@ -46,18 +46,17 @@ def merge_data(keys, data)
   hash = keys
   
   hash.each do |element|
-
     data.each do |data_element|
       data_element.each do |data_key, data_value|
-          if element[:first_name] == data_key
-            data_value.each do |data_value_key, data_value_value|
-              element[data_value_key] = data_value_value
-            end
-
+        if element[:first_name] == data_key
+          data_value.each do |data_value_key, data_value_value|
+            element[data_value_key] = data_value_value
+          end
         end
       end
     end
   end
+  
   hash
 end
   
