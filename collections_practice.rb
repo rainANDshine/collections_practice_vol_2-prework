@@ -30,7 +30,7 @@ def count_elements(array)
   new_array = []
   
   array.each do |element|
-    if new_array.last != element
+    if new_array.length == 0 || (new_array.last)[:name] != element[:name]
       new_array << {element.keys => element.values, :count => 1}
     else
       (new_array.last)[:count] += 1
