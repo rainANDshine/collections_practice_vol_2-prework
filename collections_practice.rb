@@ -10,5 +10,9 @@ def contain_a(array)
   temp = []
   
   array.each do |element|
-    temp << element if element.
+    temp << element if element.include?("a") == true
+  end
+  
+  temp
+end
   
