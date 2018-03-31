@@ -18,7 +18,7 @@ end
 
 def first_wa(array)
   array.collect do |element|
-    element if element.start_with?("wa") == true
+    element if element.to_s.start_with?("wa") == true
   end
 end
   
