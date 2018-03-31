@@ -61,7 +61,16 @@ def merge_data(keys, data)
 end
 
 def find_cool(cool)
+  array = []
+  
   cool.each do |element|
     element.each do |key, value|
-      if value 
+      if value == "cool"
+        array << element
+      end
+    end
+  end
+  
+  array
+end
   
