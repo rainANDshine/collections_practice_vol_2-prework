@@ -16,5 +16,6 @@ def contain_a(array)
   temp
 end
 
-def 
+def first_wa(array)
+  
   
