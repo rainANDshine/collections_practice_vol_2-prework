@@ -77,6 +77,15 @@ end
 def organize_schools(schools)
   hash = {}
   
-  schools.each do 
+  schools.each do |key, value|
+    if hash[value[:location]] == nil
+      hash[value[:location]] = [key]
+    else
+      hash[value[:location]] << key
+    end
+  end
+  
+  hash
+end
   
   
