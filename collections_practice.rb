@@ -17,10 +17,12 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  array.collect do |element|
+  array.each do |element|
     return element if element.to_s.start_with?("wa") == true
   end
 end
   
-def 
+def remove_non_strings(array)
+  array.each do |element|
+    ele
   
