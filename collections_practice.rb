@@ -31,7 +31,9 @@ def count_elements(array)
   
   array.each do |element|
     if new_array.length == 0 || (new_array.last)[:name] != element[:name]
-      new_array << {element.keys => element.values, :count => 1}
+      element.each do |key, value|
+        new_array << {key => value, :count => 1}
+      end
     else
       (new_array.last)[:count] += 1
     end
