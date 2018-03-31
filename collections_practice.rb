@@ -5,4 +5,10 @@ def begins_with_r(array)
   
   true
 end
+
+def contain_a(array)
+  temp = []
+  
+  array.each do |element|
+    temp << element if element.
   
