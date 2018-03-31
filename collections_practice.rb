@@ -43,7 +43,14 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  hash = keys
+    hash = keys
+  hash.each do |element|
+    element.each do |key, value|
+      data.each do |data_element|
+        puts data_element
+      end
+    end
+  end
   
   
 end
